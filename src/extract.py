@@ -13,3 +13,4 @@ def extract_weather_data():
 if __name__=="__main__":
     data = extract_weather_data()
     print(data)
+
