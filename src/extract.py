@@ -1,7 +1,7 @@
 import requests
 
 def extract_weather_data():
-    url="https://api.open-meteo.com/v1/forecast?latitude=41.85&longitude=-87.65&current=temperature_2m,wind_speed_10m"
+    url="https://api.open-meteo.com/v1/forecast?latitude=41.85&longitude=-87.65&past_days=10&hourly=temperature_2m,wind_speed_10m"
     response = requests.get(url)
 
     if response.status_code == 200:
